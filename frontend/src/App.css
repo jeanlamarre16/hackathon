@@ -34,6 +34,7 @@
   font-style: normal;
 }
 
+/* CSS */
 :root {
   /* blue */
   --main-color: #183650;
@@ -44,6 +45,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -51,10 +54,9 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: clamp(320px, 100vw, 10240px);
-  height: clamp(480px, 100vh, 4320px);
+  padding: 0 1rem 0 1rem;
+  min-width: 100vw;
+  min-height: 100vh;
   font-family: "Hind";
   font-size: medium;
   color: #000000;
@@ -91,8 +93,16 @@ h6 {
 a {
   text-decoration: none;
   font-size: medium;
+  color: #000000;
 }
 
 p {
   font-size: medium;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  bottom: 100;
+  background-color: transparent;
 }
