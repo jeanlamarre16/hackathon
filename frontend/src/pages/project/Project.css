@@ -4,12 +4,7 @@
 
 .container-bloc-affichage {
   display: flex;
-  gap: 2rem;
-}
-
-.div-button {
-  display: flex;
-  justify-content: space-around;
+  gap: 1rem;
 }
 
 button {
@@ -30,18 +25,19 @@ button:hover {
 
 div.div-project {
   width: 100vw;
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .div-project .blocAffichage p {
-  border: 1px solid gray;
   border-radius: 25px;
   background: white;
   margin-bottom: 1rem;
   width: 500px;
   box-shadow: 3px 3px 1px gray;
-  padding: 5px 10px;
+  padding: 10px 10px;
 }
 
 .blocAffichage {
@@ -49,15 +45,23 @@ div.div-project {
   grid-template-columns: repeat(2, fr);
 }
 
-progress::-webkit-progress-value {
+progress {
   margin-bottom: 25px;
   min-width: 500px;
-  color: #aa4465;
-  background-color: red !important;
-  height: 20px;
+  accent-color: #aa4465;
+  height: 35px;
 }
 
 .div-project h1,
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+i {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+button {
+  margin: 1rem;
 }

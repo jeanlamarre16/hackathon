@@ -106,3 +106,8 @@ header {
   bottom: 100;
   background-color: transparent;
 }
+
+div.div-container {
+  background-image: url("./assets/pictures/dashboard-background.png");
+  background-attachment: fixed;
+}
