@@ -1,5 +1,5 @@
-import Navbar from "../../components/navbar/Navbar";
 import DashboardCategories from "@components/dashboard_categories/DashboardCategories";
+import Navbar from "../../components/navbar/Navbar";
 
 import "./Dashboard.css";
 

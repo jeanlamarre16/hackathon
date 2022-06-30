@@ -16,7 +16,26 @@
   gap: 10%;
 }
 
+@keyframes start {
+  0% {
+    filter: grayscale(100%);
+    transform: translateY(200vw)
+  }
+  90% {
+    filter: grayscale(100%);
+  }
+  100% {
+    transform: translateY(0vw);
+    filter: grayscale(0%);
+  }
+}
+
 .inputArea {
+  animation-name: start;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+  position: relative;
+  top: 0vw;
   height: 70%;
   width: 35%;
   display: flex;
@@ -24,6 +43,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 
 .loginUserNameContainer {
   position: relative;
