@@ -8,11 +8,6 @@ div.container-project-details {
   max-width: 50%;
 }
 
-.div-bloc2 {
-  background: tomato;
-  flex-grow: 0;
-}
-
 .div-projDetails {
   background: #d9d9d9;
   padding: 1rem;
@@ -20,7 +15,65 @@ div.container-project-details {
 
 .card-bloc2 {
   background: #19354f;
+  min-width: 400px;
+  border-radius: 25px 25px 0 0;
+  padding-bottom: 25px;
+  text-align: center;
+  border-bottom: 3px solid #cd911d;
+}
+
+.card-bloc2 p {
+  background: white;
+  margin: 25px;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+.card-bloc2 img {
+  width: 12rem;
+  height: auto;
+  align-self: center;
+}
+
+.div-bloc2 {
+  background: #d9d9d9;
+  margin-bottom: 2rem;
+  border-radius: 0 0 25px 25px;
+}
+
+.div-bloc2 button {
+  margin: 6rem 0 0 8rem;
+  color: #cd911d;
+}
+
+.div-bloc2 button:hover {
   color: white;
-  height: 50px;
-  min-width: 500px;
+  background: #19354f;
+}
+
+img.logo {
+  margin: 1rem 0 1rem 7rem;
+  width: 10rem;
+  height: auto;
+}
+
+p.reference {
+  font-weight: bold;
+}
+
+.div-progress-bar {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.div-progress-bar span.span-1 {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.div-progress-bar span.span-2 {
+  position: absolute;
+  top: 70px;
+  left: 15px;
 }

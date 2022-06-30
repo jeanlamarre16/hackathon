@@ -19,11 +19,11 @@ export default function Project() {
         <div className="blocAffichage">
           {projects.map((project) => {
             return (
-              <>
+              <div key={project.id}>
                 <h2>{project.project_domain}</h2>
                 <p>
                   {`${project.project_name} | ${project.created_at} | ${project.id_city}`}{" "}
-                  |<i className="fa-solid fa-pencil" /> |
+                  | <i className="fa-solid fa-pencil" /> |
                   <Link to={`./${project.id}`}>
                     <i className="fa-solid fa-user-plus" />
                   </Link>
@@ -31,7 +31,7 @@ export default function Project() {
                 <progress value={project.progression} max="100">
                   {project.progression}
                 </progress>
-              </>
+              </div>
             );
           })}
         </div>
