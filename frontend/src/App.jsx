@@ -1,4 +1,5 @@
-import Home from "@pages/home/Home";
+// import Home from "@pages/home/Home";
+import Dashboard from "@pages/dashboard/Dashboard";
 import Navbar from "@components/navbar/Navbar";
 import AddProject from "@pages/add_project/AddProject";
 import Project from "@pages/project/Project";
