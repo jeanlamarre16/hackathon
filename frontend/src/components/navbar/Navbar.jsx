@@ -17,11 +17,6 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/events">
-            <i className="fa-solid fa-calendar" /> Evenements
-          </Link>
-        </li>
-        <li>
           <Link to="/add-project">
             <i className="fa-solid fa-circle-plus" /> Ajouter un projet
           </Link>
