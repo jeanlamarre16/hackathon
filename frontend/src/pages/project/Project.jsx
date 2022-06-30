@@ -8,7 +8,7 @@ export default function Project() {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/project`)
+      .get("http://localhost:5000/project")
       .then((response) => setProjects(response.data));
   }, []);
 
