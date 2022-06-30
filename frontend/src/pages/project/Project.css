@@ -21,7 +21,7 @@ progress::-webkit-progress-value {
     margin-bottom: 25px;
     min-width: 500px;
     color: #AA4465;
-    background-color: red !importa;
+    background-color: red !important;
     height: 20px;
 }
 
