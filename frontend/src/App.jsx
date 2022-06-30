@@ -1,4 +1,5 @@
-import Home from "@pages/home/Home";
+// import Home from "@pages/home/Home";
+import Dashboard from "@pages/dashboard/Dashboard";
 import Navbar from "@components/navbar/Navbar";
 import AddProject from "@pages/add_project/AddProject";
 import Project from "@pages/project/Project";
@@ -16,7 +17,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/project/:id" element={<ProjectDetails />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/project" element={<Project />} />
             <Route path="/add-project" element={<AddProject />} />
           </Routes>
