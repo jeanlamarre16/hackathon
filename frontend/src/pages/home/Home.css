@@ -1,3 +1,18 @@
+@keyframes startbackground {
+  0% {
+    filter: contrast(250%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
+}
+
+html {
+  animation-name: startbackground;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+}
+
 .homeContainer {
   /*height: 100vw;*/
   display: flex;
@@ -21,8 +36,8 @@
     filter: grayscale(100%);
     transform: translateY(200vw)
   }
-  90% {
-    filter: grayscale(100%);
+  80% {
+    filter: grayscale(70%);
   }
   100% {
     transform: translateY(0vw);
