@@ -1,4 +1,4 @@
-div.d-categories-container{
+div.d-categories-container {
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -7,7 +7,7 @@ div.d-categories-container{
   gap: 3rem;
 }
 
-div.d-categories-container > div{
+div.d-categories-container > div {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -25,11 +25,11 @@ div.d-categories-container > div {
 div.d-categories-container > div > img {
   height: 100%;
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
-div.d-categories-container > div > div > p  {
+div.d-categories-container > div > div > p {
   margin: 0;
   padding: 0;
   display: flex;
@@ -37,8 +37,8 @@ div.d-categories-container > div > div > p  {
   align-items: center;
 }
 
-div.d-categories-container > div > div .dash-cat-button{
-  transition: .5s ease;
+div.d-categories-container > div > div .dash-cat-button {
+  transition: 0.5s ease;
   opacity: 0;
 }
 
@@ -46,15 +46,14 @@ div.d-categories-container > div:hover > img {
   opacity: 0.7;
 }
 
-
-div.d-categories-container >  div:hover > div .dash-cat-button {
+div.d-categories-container > div:hover > div .dash-cat-button {
   opacity: 1;
 }
 
 div.d-categories-container > div > div .dash-cat-button {
   padding: 0.5rem;
   font-size: large;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   border-radius: 5px;
 }
