@@ -9,7 +9,9 @@ import "./App.css";
 function App() {
   return (
     <>
+    <header>
       <Navbar />
+    </header>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

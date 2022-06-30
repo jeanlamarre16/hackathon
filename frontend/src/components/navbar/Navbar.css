@@ -1,22 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
+nav {
+  width: 100vw;
+  height: 12vh;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-div.div-navbar {
+nav > ul.navbar {
+  height: 100%;
   display: flex;
-}
-
-ul.navbar {
-  height: 100px;
-  background-color: #db9967;
-  display: flex;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
   align-items: center;
+  gap: 4rem;
   list-style-type: none;
 }
