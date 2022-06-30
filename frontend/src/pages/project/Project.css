@@ -1,4 +1,63 @@
-.div-project {
+* {
+  box-sizing: border-box;
+}
+
+.container-bloc-affichage {
+  display: flex;
+  gap: 2rem;
+}
+
+.div-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 0.6rem;
+  color: #204245;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1.5px solid #204245;
+  font-size: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+  color: white;
+  background: #204245;
+  font-size: 1rem;
+}
+
+div.div-project {
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.div-project .blocAffichage p {
+  border: 1px solid gray;
+  border-radius: 25px;
+  background: white;
+  margin-bottom: 1rem;
+  width: 500px;
+  box-shadow: 3px 3px 1px gray;
+  padding: 5px 10px;
+}
+
+.blocAffichage {
   display: grid;
-  grid-template-columns: repeat(5, fr);
+  grid-template-columns: repeat(2, fr);
+}
+
+progress::-webkit-progress-value {
+  margin-bottom: 25px;
+  min-width: 500px;
+  color: #aa4465;
+  background-color: red !important;
+  height: 20px;
+}
+
+.div-project h1,
+h2 {
+  margin-bottom: 1rem;
 }
