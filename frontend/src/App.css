@@ -1,35 +1,35 @@
 /* Imported polices */
 @font-face {
   font-family: "Montserrat";
-  src: url('./assets/fonts/Montserrat-Regular.ttf');
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url('./assets/fonts/Montserrat-Bold.ttf');
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url('./assets/fonts/Montserrat-BoldItalic.ttf');
+  src: url("./assets/fonts/Montserrat-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Hind";
-  src: url('./assets/fonts/Hind-Regular.ttf');
+  src: url("./assets/fonts/Hind-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Hind";
-  src: url('./assets/fonts/Hind-Bold.ttf');
+  src: url("./assets/fonts/Hind-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
@@ -38,19 +38,19 @@
   /* blue */
   --main-color: #183650;
   /* orange */
-  --secondary-color: #E79759;
+  --secondary-color: #e79759;
 }
 
-
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: clamp(320px, 100vw, 10240px);
@@ -60,9 +60,14 @@ body{
   color: #000000;
 }
 
-h1, h2, h3, h4, h5, h6 {
- font-family: "Montserrat";
- color: var(--main-color); 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  color: var(--main-color);
 }
 
 h1 {
@@ -77,7 +82,9 @@ h3 {
   font-size: large;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: medium;
 }
 
@@ -86,6 +93,6 @@ a {
   font-size: medium;
 }
 
-p  {
+p {
   font-size: medium;
 }

@@ -14,21 +14,38 @@ export default function Project() {
   return (
     <div className="div-project">
       <h1>Nos Projets</h1>
-      <div className="blocAffichage">
-        {projects.map((project) => {
-          return (
-            <>
-              <h2>{project.project_domain}</h2>
-              <p>{`${project.project_name} | ${project.created_at} | ${project.id_city}`}</p>
-              <progress value={project.progression} max="100">
-                {project.progression}
-              </progress>
-            </>
-          );
-        })}
+      <div className="container-bloc-affichage">
+        <div className="blocAffichage">
+          {projects.map((project) => {
+            return (
+              <>
+                <h2>{project.project_domain}</h2>
+                <p>{`${project.project_name} | ${project.created_at} | ${project.id_city}`}</p>
+                <progress value={project.progression} max="100">
+                  {project.progression}
+                </progress>
+              </>
+            );
+          })}
+        </div>
+        <div className="blocAffichage">
+          {projects.map((project) => {
+            return (
+              <>
+                <h2> " "</h2>
+                <p>{`${project.project_name} | ${project.created_at} | ${project.id_city}`}</p>
+                <progress value={project.progression} max="100">
+                  {project.progression}
+                </progress>
+              </>
+            );
+          })}
+        </div>
       </div>
-      <button type="button">Ajouter un nouveau projet</button>
-      <button type="button">Logout</button>
+      <div className="div-button">
+        <button type="button">Ajouter un projet</button>
+        <button type="button">Logout</button>
+      </div>
     </div>
   );
 }
