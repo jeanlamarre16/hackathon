@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./Project.css";
 
 export default function Project() {
@@ -20,7 +21,13 @@ export default function Project() {
             return (
               <>
                 <h2>{project.project_domain}</h2>
-                <p>{`${project.project_name} | ${project.created_at} | ${project.id_city}`}</p>
+                <p>
+                  {`${project.project_name} | ${project.created_at} | ${project.id_city}`}{" "}
+                  |<i className="fa-solid fa-pencil" /> |
+                  <Link to={`./${project.id}`}>
+                    <i className="fa-solid fa-user-plus" />
+                  </Link>
+                </p>
                 <progress value={project.progression} max="100">
                   {project.progression}
                 </progress>
@@ -32,7 +39,7 @@ export default function Project() {
           {projects.map((project) => {
             return (
               <>
-                <h2> " "</h2>
+                <h2>&nbsp;</h2>
                 <p>{`${project.project_name} | ${project.created_at} | ${project.id_city}`}</p>
                 <progress value={project.progression} max="100">
                   {project.progression}
