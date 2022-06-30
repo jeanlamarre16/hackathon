@@ -10,9 +10,6 @@ import "./App.css";
 function App() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
       <div className="div-container">
         <div>
           <Routes>
