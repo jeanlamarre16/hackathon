@@ -8,7 +8,7 @@ export default function Navbar() {
       <ul className="navbar">
         <li>
           <Link
-            to="/"
+            to="/dashboard"
             aria-label="Aller sur l'accueil principal du dasboard"
             title="Accéder à l'accueil du dashboard"
           >
