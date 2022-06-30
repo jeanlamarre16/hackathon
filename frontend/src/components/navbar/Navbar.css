@@ -1,11 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 div.div-navbar {
-  background-color: rgb(222, 205, 205);
   display: flex;
 }
 
 ul.navbar {
   height: 100px;
-  background-color: rgb(222, 205, 205);
+  background-color: #db9967;
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -1,8 +1,8 @@
-import Home from "@pages/Home";
-import Navbar from "@components/Navbar";
-import AddProject from "@pages/AddProject";
-import Project from "@pages/Project";
-import Events from "@pages/Events";
+import Home from "@pages/home/Home";
+import Navbar from "@components/navbar/Navbar";
+import AddProject from "@pages/add_project/AddProject";
+import Project from "@pages/project/Project";
+import Events from "@pages/events/Events";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 

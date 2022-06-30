@@ -1,0 +1,4 @@
+.div-project {
+  display: grid;
+  grid-template-columns: repeat(5, fr);
+}
