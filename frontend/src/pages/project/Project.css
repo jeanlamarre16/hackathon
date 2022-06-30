@@ -17,16 +17,12 @@
     grid-template-columns: repeat(2, fr);
 }
 
-
-
 progress::-webkit-progress-value {
-   
     margin-bottom: 25px;
     min-width: 500px;
     color: #AA4465;
-    background-color: red !important;
+    background-color: red !importa;
     height: 20px;
-
 }
 
 .div-project h1, h2 {
