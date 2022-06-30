@@ -1,6 +1,6 @@
 nav {
   padding: 2rem 0 2rem 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -14,4 +14,3 @@ nav .nav-item {
   justify-content: center;
   align-items: center;
 }
-
