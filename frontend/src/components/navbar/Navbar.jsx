@@ -9,10 +9,11 @@ export default function Navbar() {
         <li>
           <Link
             to="/"
-            aria-label="Aller sur l'accueil principal"
-            title="Accéder à l'accueil"
+            aria-label="Aller sur l'accueil principal du dasboard"
+            title="Accéder à l'accueil du dashboard"
           >
-            <i className="fa fa-solid fa-home" aria-hidden="true" /> Accueil
+            <i className="fa fa-solid fa-home" aria-hidden="true" /> Accueil du
+            dashboard
           </Link>
         </li>
         <li>
