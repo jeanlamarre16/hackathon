@@ -1,59 +1,43 @@
-div.d-categories-container {
+div.dash-cat-container {
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3rem;
+  column-gap: 10rem;
 }
 
-div.d-categories-container > div {
+div.dash-cat-container > div {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow:  column nowrap;
   align-items: center;
   justify-content: center;
 }
 
-div.d-categories-container > div {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px blue solid;
-}
-
-div.d-categories-container > div > img {
-  height: 100%;
-  width: 100%;
+div.dash-cat-container > div > img {
+  height: 35vh;
+  width: auto;
   transition: 0.5s ease;
-  backface-visibility: hidden;
 }
 
-div.d-categories-container > div > div > p {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+div.dash-cat-container > div > div:nth-of-type(2) {
+  position: absolute;
 }
 
-div.d-categories-container > div > div .dash-cat-button {
+div.dash-cat-container > div > div > .dash-cat-button {
   transition: 0.5s ease;
   opacity: 0;
-}
-
-div.d-categories-container > div:hover > img {
-  opacity: 0.7;
-}
-
-div.d-categories-container > div:hover > div .dash-cat-button {
-  opacity: 1;
-}
-
-div.d-categories-container > div > div .dash-cat-button {
   padding: 0.5rem;
   font-size: large;
-  background-color: #04aa6d;
-  color: white;
+  background-color: var(--secondary-color);
+  font-weight: bold;
   border-radius: 5px;
+}
+
+div.dash-cat-container > div:hover > img {
+  filter: grayscale(60%) blur(2px);
+}
+
+div.dash-cat-container > div:hover > div > .dash-cat-button {
+  opacity: 1;
 }
