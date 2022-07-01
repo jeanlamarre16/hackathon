@@ -1,0 +1,96 @@
+@keyframes startbackground {
+  0% {
+    filter: contrast(250%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
+}
+
+html {
+  animation-name: startbackground;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+}
+
+.homeContainer {
+  /*height: 100vw;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputFields {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 590px;
+  width: 332px;
+  gap: 10%;
+}
+
+@keyframes start {
+  0% {
+    filter: grayscale(100%);
+    transform: translateY(200vw)
+  }
+  80% {
+    filter: grayscale(70%);
+  }
+  100% {
+    transform: translateY(0vw);
+    filter: grayscale(0%);
+  }
+}
+
+.inputArea {
+  animation-name: start;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+  position: relative;
+  top: 0vw;
+  height: 70%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.loginUserNameContainer {
+  position: relative;
+  top: -20%;
+  width: 60%;
+  height: 50px;
+  background-color: #fec601;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginUserNameContainer input {
+  border-style: none;
+  width: 80%;
+}
+
+.loginPasswordContainer {
+  position: relative;
+  top: -20%;
+  width: 60%;
+  height: 50px;
+  background-color: #fec601;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPasswordContainer input {
+  border-style: none;
+  width: 80%;
+}
