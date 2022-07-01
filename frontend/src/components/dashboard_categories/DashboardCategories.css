@@ -1,0 +1,43 @@
+div.dash-cat-container {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 10rem;
+}
+
+div.dash-cat-container > div {
+  display: flex;
+  flex-flow:  column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.dash-cat-container > div > img {
+  height: 35vh;
+  width: auto;
+  transition: 0.5s ease;
+}
+
+div.dash-cat-container > div > div:nth-of-type(2) {
+  position: absolute;
+}
+
+div.dash-cat-container > div > div > .dash-cat-button {
+  transition: 0.5s ease;
+  opacity: 0;
+  padding: 0.5rem;
+  font-size: large;
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+div.dash-cat-container > div:hover > img {
+  filter: grayscale(60%) blur(2px);
+}
+
+div.dash-cat-container > div:hover > div > .dash-cat-button {
+  opacity: 1;
+}

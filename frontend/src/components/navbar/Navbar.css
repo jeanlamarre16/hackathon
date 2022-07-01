@@ -1,16 +1,19 @@
 nav {
-  width: 100vw;
+  padding: 0 1rem 0 1rem;
   height: 12vh;
-}
-
-nav > ul.navbar {
-  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
+  background-color: #FFFFFF;
   gap: 4rem;
-  list-style-type: none;
+}
+
+nav .nav-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
