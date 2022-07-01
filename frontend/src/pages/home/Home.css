@@ -34,7 +34,7 @@ html {
 @keyframes start {
   0% {
     filter: grayscale(100%);
-    transform: translateY(200vw)
+    transform: translateY(200vw);
   }
   80% {
     filter: grayscale(70%);
@@ -58,8 +58,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .loginUserNameContainer {
   position: relative;

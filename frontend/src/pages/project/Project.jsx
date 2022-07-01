@@ -3,8 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Navbar from "@components/navbar/Navbar";
 
-import "./Project.css";
-
 export default function Project() {
   const [projects, setProjects] = useState([]);
 
