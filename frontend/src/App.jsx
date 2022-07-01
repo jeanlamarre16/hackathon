@@ -1,5 +1,4 @@
 import Home from "@pages/home/Home";
-import Navbar from "@components/navbar/Navbar";
 import AddProject from "@pages/add_project/AddProject";
 import Project from "@pages/project/Project";
 import ProjectDetails from "@pages/project_details/ProjectDetails";
@@ -9,22 +8,17 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <header>
-        <Navbar />
-      </header>
-      <div className="div-container">
-        <div>
-          <Routes>
-            <Route path="/project/:id" element={<ProjectDetails />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/add-project" element={<AddProject />} />
-          </Routes>
-        </div>
+    <div className="div-container">
+      <div>
+        <Routes>
+          <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/add-project" element={<AddProject />} />
+        </Routes>
       </div>
-    </>
+    </div>
   );
 }
 

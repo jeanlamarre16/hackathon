@@ -1,3 +1,3 @@
-section.dashboard {
-  border: 1px red solid;
+section.dash-container {
+  padding-top: 12vh;
 }
