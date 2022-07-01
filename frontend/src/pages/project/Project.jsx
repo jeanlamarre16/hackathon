@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Project.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init();
 
 export default function Project() {
   const [projects, setProjects] = useState([]);
@@ -15,6 +19,7 @@ export default function Project() {
   return (
     <div className="div-project">
       <h1>Nos Projets</h1>
+
       <div className="container-bloc-affichage">
         <div className="blocAffichage">
           {projects.map((project) => {
@@ -22,7 +27,7 @@ export default function Project() {
               <div key={project.id}>
                 <h2>{project.project_domain}</h2>
                 <p>
-                  {`${project.project_name} | ${project.created_at} | ${project.id_city}`}{" "}
+                  {`${project.project_name} | ${project.created_at} | ${project.name}`}{" "}
                   | <i className="fa-solid fa-pencil" /> |
                   <Link to={`./${project.id}`}>
                     <i className="fa-solid fa-user-plus" />

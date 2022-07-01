@@ -23,7 +23,7 @@ export default function ProjectDetails() {
         <div className="div-bloc1">
           <div className="div-projDetails">
             <h2>Description</h2>
-            <p className="description">{projectData.description}</p>
+            <p className="description">projectData.description</p>
           </div>
           <div className="div-progress-bar">
             <span className="span-1">progression</span>
