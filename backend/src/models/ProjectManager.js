@@ -16,6 +16,12 @@ class ProjectManager extends AbstractManager {
       [project.project_name, project.id]
     );
   }
+
+  findAll() {
+    return this.connection.query(
+      `select *, city.name AS ville from ${this.table} join city on city.id=project.id_city`
+    );
+  }
 }
 
 module.exports = ProjectManager;

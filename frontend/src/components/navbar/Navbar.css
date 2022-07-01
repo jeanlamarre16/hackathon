@@ -5,7 +5,7 @@ nav {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   gap: 4rem;
 }
 
@@ -15,3 +15,11 @@ nav .nav-item {
   justify-content: center;
   align-items: center;
 }
+
+/*
+nav {
+  background: white;
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px 3px gray;
+}
+*/
