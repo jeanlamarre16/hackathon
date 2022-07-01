@@ -17,13 +17,13 @@ export default function Home() {
             <input className="loginPassword" placeholder="Password" />
           </div>
         </div>
-        <button type="button">
+        <button className="btnLogin" type="button">
           <Link
             to="/dashboard"
             aria-label="Aller sur la page dashboard"
             title="Accéder au dashboard"
           >
-            Login
+            LOGIN
           </Link>
         </button>
       </section>

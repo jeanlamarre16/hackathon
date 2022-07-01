@@ -94,3 +94,17 @@ html {
   border-style: none;
   width: 80%;
 }
+
+.btnLogin{
+  all: unset;
+  cursor: pointer;
+  border-radius: 30%;
+  padding: 10px 20px;
+  background-color: #fec601;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.btnLogin:hover{
+  background-color: #fec601;
+}
