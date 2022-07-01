@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Project.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 
 AOS.init();
 
@@ -24,7 +24,7 @@ export default function Project() {
         <div className="blocAffichage">
           {projects.map((project) => {
             return (
-              <div key={project.id}>
+              <div>
                 <h2>{project.project_domain}</h2>
                 <p>
                   {`${project.project_name} | ${project.created_at} | ${project.name}`}{" "}

@@ -10,7 +10,7 @@ div.container-project-details {
 
 .div-projDetails {
   background: #d9d9d9;
-  padding: 1rem;
+  padding: 0.6rem 1.5rem;
 }
 
 .card-bloc2 {
@@ -42,7 +42,7 @@ div.container-project-details {
 }
 
 .div-bloc2 button {
-  margin: 6rem 0 0 8rem;
+  margin: 6rem 0 1.5rem 8rem;
   color: #cd911d;
 }
 
