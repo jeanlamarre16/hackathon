@@ -10,44 +10,85 @@ import "./DashboardCategories.css";
 
 export default function DashboardCategories() {
   return (
-    <div className="d-categories-container">
+    <div className="dash-cat-container">
       <div>
+        <div>
+          <h2>Conception</h2>
+        </div>
         <img src={conception} alt="njn" />
         <div>
-          <p className="dash-cat-button">Conception</p>
+          <Link
+            className="dash-cat-button"
+            to="/conception"
+            aria-label="Aller sur la page des outils d'aide à la concetion de projets"
+            title="Accéder aux outils de conception"
+          >
+            Accéder
+          </Link>
         </div>
       </div>
       <div>
-        <img src={project} alt="nne" />
         <div>
-          <p>
-            <Link
-              className="dash-cat-button"
-              to="/project"
-              aria-label="Aller sur la page des projets"
-              title="Accéder aux projets"
-            >
-              Gestion du projet
-            </Link>
-          </p>
+          <h2>Gestion de projet</h2>
         </div>
-      </div>
-      <div>
-        <img src={techSpace} alt="ddc" />
+        <img src={project} alt="Réunion professionnelle en vue plongeante" />
         <div>
-          <p className="dash-cat-button">Espace technique</p>
+          <Link
+            className="dash-cat-button"
+            to="/project"
+            aria-label="Aller sur la page des projets"
+            title="Accéder aux projets"
+          >
+            Accéder
+          </Link>
         </div>
       </div>
       <div>
-        <img src={clientSpace} alt="dds" />
         <div>
-          <p className="dash-cat-button">Espace client</p>
+          <h2>Espace technique</h2>
+        </div>
+        <img src={techSpace} alt="Bureau équipé d'un ortinateur portable" />
+        <div>
+          <Link
+            className="dash-cat-button"
+            to="/technique"
+            aria-label="Aller sur la page du référentiel technique"
+            title="Accéder au référentiel technique"
+          >
+            Accéder
+          </Link>
         </div>
       </div>
       <div>
+        <div>
+          <h2>Espace client</h2>
+        </div>
+        <img src={clientSpace} alt="Deux personnes qui se serrent la main" />
+        <div>
+          <Link
+            className="dash-cat-button"
+            to="/client"
+            aria-label="Aller sur la page du listing des client"
+            title="Accéder à la liste des clients"
+          >
+            Accéder
+          </Link>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Chat</h2>
+        </div>
         <img src={chat} alt="feffe" />
         <div>
-          <p className="dash-cat-button">Chat</p>
+          <Link
+            className="dash-cat-button"
+            to="/chat"
+            aria-label="Aller sur le chat"
+            title="Accéder au chat"
+          >
+            Accéder
+          </Link>
         </div>
       </div>
     </div>
